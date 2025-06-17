@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>EmployeeLeaveTracker</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  
+    <servlet>
+        <servlet-name>ApplyLeaveServlet</servlet-name>
+        <servlet-class>com.example.ApplyLeaveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplyLeaveServlet</servlet-name>
+        <url-pattern>/applyLeave</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LeaveStatusServlet</servlet-name>
+        <servlet-class>com.example.LeaveStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LeaveStatusServlet</servlet-name>
+        <url-pattern>/leaveStatus</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>LeaveStatus</servlet-name>
+        <servlet-class>com.example.Leavestatus.LeaveStatus</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LeaveStatus</servlet-name>
+        <url-pattern>/leavestatus</url-pattern>
+    </servlet-mapping>
+    
+   
+    <servlet>
+        <servlet-name>Monthlysummary</servlet-name>
+        <servlet-class>com.example.Monthlysummary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Monthlysummary</servlet-name>
+        <url-pattern>/monthlysummary</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>deletionleaves</servlet-name>
+        <servlet-class>com.example.deletion.deletionleaves</servlet-class>
+     </servlet>
+    <servlet-mapping>
+        <servlet-name>deletionleaves</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+   <servlet>
+        <servlet-name>ApproveLeave</servlet-name>
+        <servlet-class>com.example.ApproveLeave</servlet-class>
+     </servlet>
+    <servlet-mapping>
+        <servlet-name>ApproveLeave</servlet-name>
+        <url-pattern>/approveleave</url-pattern>
+    </servlet-mapping>
+   
+    
+
+</web-app>
